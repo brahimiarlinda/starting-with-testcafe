@@ -1,0 +1,24 @@
+{
+  "name": "testcafe-udemy",
+  "version": "1.0.0",
+  "description": "Test Automation with Testcafe",
+  "main": "index.js",
+  "scripts": {
+    "test:chrome": "testcafe chrome ./tests -s takeOnFails=true --disable-page-cashing",
+    "test:firefox": "testcafe firefox ./tests",
+    "test:safari": "testcafe safari ./tests",
+    "test:chrome:headless": "testcafe chrome:headless ./tests",
+    "test:chrome:mobile": "testcafe chrome:emulation:device=iphone X ./tests"
+  },
+  "keywords": [
+    "Testcafe",
+    "Testing",
+    "Automation"
+  ],
+  "author": "Arlinda Brahimi",
+  "license": "ISC",
+  "dependencies": {
+    "prettier": "^2.0.2",
+    "testcafe": "^1.8.3"
+  }
+}
